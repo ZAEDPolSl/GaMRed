@@ -24,7 +24,6 @@ end
 %% Minimize BIC to get the optimal no. of GMM components
 [~,n_opt] = min(abs(BIC));
 thr_opt = thr(n_opt);   % Final threshold for filtering genes
-thr_opt = 8.03;
 
 if ifshow
     disp(['Optimal threshold for ',num2str(n_opt),' components GMM model is ',num2str(thr_opt)])
